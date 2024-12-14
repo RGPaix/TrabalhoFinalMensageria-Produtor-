@@ -1,0 +1,4 @@
+com\appmeteorologicoconsumidor\ConsumerController.class
+module-info.class
+com\appmeteorologicoconsumidor\Main.class
+com\appmeteorologicoconsumidor\RabbitConsumer.class
