@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="342.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="382.0" prefWidth="518.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ComboBox fx:id="EventoComboBox" layoutX="166.0" layoutY="69.0" prefHeight="25.0" prefWidth="254.0" />
+            <ComboBox fx:id="HoraComboBox" layoutX="168.0" layoutY="112.0" prefHeight="25.0" prefWidth="89.0" />
+            <ComboBox fx:id="CidadeComboBox" layoutX="169.0" layoutY="152.0" prefHeight="25.0" prefWidth="254.0" />
+            <Label fx:id="EventoLabel" layoutX="66.0" layoutY="73.0" text="Evento climático:" />
+            <Label fx:id="horaLabel" layoutX="126.0" layoutY="116.0" text="Hora:" />
+            <Label fx:id="CidadeLabel" layoutX="111.0" layoutY="156.0" text="Cidade:" />
+            <ComboBox fx:id="DataComboBox" layoutX="330.0" layoutY="112.0" prefHeight="25.0" prefWidth="89.0" />
+            <Label fx:id="DataLabel" layoutX="293.0" layoutY="116.0" text="Data:" />
+            <Button fx:id="GerarAlertaBttn" layoutX="200.0" layoutY="285.0" mnemonicParsing="false" text="Gerar alerta" />
+            <Button fx:id="VoltarBttn" layoutX="320.0" layoutY="285.0" mnemonicParsing="false" text="Voltar" />
+            <HBox fx:id="HeaderBox" alignment="CENTER" blendMode="DARKEN" layoutX="-1.0" prefHeight="25.0" prefWidth="527.0" spacing="420.0" style="-fx-background-color: #e1e9f2;">
+               <children>
+                  <Label fx:id="TituloLabel" alignment="CENTER" text="Gerar alerta" />
+                  <Button fx:id="Fechar_XBttn" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="X" />
+               </children>
+            </HBox>
+            <VBox layoutX="169.0" layoutY="220.0" prefHeight="25.0" prefWidth="254.0">
+               <children>
+                  <TextArea fx:id="ConfirmarEnvioTextArea" blendMode="ADD" prefHeight="16.0" prefWidth="254.0" />
+               </children>
+            </VBox>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
